@@ -1,0 +1,35 @@
+﻿@model string[]
+@{ Layout = "_Layout";}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Razor</title>
+    @*<link asp-href-include="~/lib/bootstrap/dist/css/*.min.css" rel="stylesheet" />*@
+    @*<link asp-href-include="  lib/bootstrap/dist/css/*.min.css" rel="stylesheet" />*@
+    @*<script id="jsonData" type="application/json">
+        @Json.Serialize(new string[] { "abo","vacho","chacho"})
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var list1 = $("#list");
+            JSON.parse($("#jsonData").text()).forEach(function (val) {
+                console.log("Val: " + val);
+                list1.append($("<li>").text(val));
+            });
+        });
+    </script>*@
+</head>
+<body class="m-1 p-1">
+    This is the List view gggg
+    <ul id="list"></ul>
+    @*This is a list of fruit names:*@
+    @*@foreach (string name in Model)
+    {
+        <span><b>@name</b></span>
+    }*@
+    @*@await Html.PartialAsync("Home1/Partial", new string[] { "aaa","bbb","ccc"})*@
+    <partial name="Home1/Partial" />
+</body>
+</html>
