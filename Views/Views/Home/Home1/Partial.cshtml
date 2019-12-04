@@ -1,18 +1,18 @@
-﻿@model IEnumerable<string>
+﻿@model List<string>
 
 <div class="bg-info">
     <div>This is a partial view 1111</div>
     <a asp-action="Index">This is a link to the Index action</a>
     <br />
     <br />
-    @foreach(string name in Model)
+    @foreach (string name in Model)
     {
-    <ul>
-        <li>@name</li>
-        <li>@name</li>
-        <li>@name</li>
-        <li>@name</li>
-        <li>@name</li>
-    </ul>
+        <ul>
+            <li>@name</li>
+            <li>@name</li>
+            <li>@name</li>
+            <li>@name</li>
+            <li>@name</li>
+        </ul>
     }
 </div>

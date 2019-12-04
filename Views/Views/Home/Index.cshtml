@@ -1,4 +1,4 @@
-﻿@model string[]
+﻿@model List<string>
 @{ Layout = "_Layout";}
 
 <!DOCTYPE html>
@@ -30,6 +30,6 @@
         <span><b>@name</b></span>
     }*@
     @*@await Html.PartialAsync("Home1/Partial", new string[] { "aaa","bbb","ccc"})*@
-    <partial name="Home1/Partial" />
+    <partial name="Home1/Partial" model=Model />
 </body>
 </html>
