@@ -24,7 +24,7 @@ namespace Views.Test
             // Action
             List<string> result  = GetViewModel<List<string>>(target.Index());
             // Assert
-            Assert.Equal(2, result.Count);
+            Assert.Equal(3, result.Count);
             //Assert.Equal("P1", result[0].Name);
             //Assert.Equal("P2", result[1].Name);
             //Assert.Equal("P3", result[2].Name);
