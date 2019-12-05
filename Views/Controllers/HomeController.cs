@@ -8,7 +8,7 @@ namespace Views.Controllers
 {
     public class HomeController : Controller
     {
-        private List<string> mainList = new List<string> { "Orange", "Pear" };
+        private List<string> mainList = new List<string> { "Orange", "Pear","Banana" };
         public HomeController(List<string> list = null)
         {
             //mainList = list;
